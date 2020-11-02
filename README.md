@@ -13,8 +13,11 @@ Golang postgres echo connectivity with Echo framework and Gorm
 
 6. `go run main.go`
 
-6. `go get -u gorm.io/gorm`
+7. `go get -u gorm.io/gorm`
 
+8. Install `docker` and `docker-compose` https://docs.docker.com/compose/install/
+
+9. 
 
 
 
