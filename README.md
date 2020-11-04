@@ -17,7 +17,11 @@ Golang postgres echo connectivity with Echo framework and Gorm
 
 8. Install `docker` and `docker-compose` https://docs.docker.com/compose/install/
 
-9. 
+9. Run `docker-compose up` for pg admin page
+
+9. Run `ifconfig |grep inet` to display your ip address xxx.xxx.x.x 
+
+10. 
 
 
 
