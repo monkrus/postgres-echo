@@ -21,7 +21,16 @@ Golang postgres echo connectivity with Echo framework and Gorm
 
 9. Run `ifconfig |grep inet` to display your ip address xxx.xxx.x.x 
 
-10. 
+10. Notes:
+
+- docker_postgres_init.sql creates an initial students table
+- docker-compose.yml file sets an environment for PG Admin
+- db.go (config) configures user, password, host etc.
+- student.go (model) consists of student struct (id and name)
+- db.go (storage) configures new DB, gets an error if if does not start properly
+- student.go (controller) displays student`s records as a JSON using GetRepoStudents (fetching the table students)
+- main.go has echo instance, middleware, server start etc.
+
 
 
 
