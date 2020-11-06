@@ -5,11 +5,14 @@ import (
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
+	"github.com/oxlb/GoLangPostgresHelloWorld/controller"
+	"github.com/oxlb/GoLangPostgresHelloWorld/storage"
 )
 
 func main() {
 	// Echo instance
 	e := echo.New()
+	storage.NewDB()
 
 	// Middleware
 	e.Use(middleware.Logger())
@@ -17,6 +20,7 @@ func main() {
 
 	// Routes
 	e.GET("/", hello)
+	e.GET("/students", controller.GetStudents)
 
 	// Start server
 	e.Logger.Fatal(e.Start(":1323"))

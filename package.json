@@ -1,0 +1,22 @@
+{
+  "name": "postgres-echo",
+  "version": "1.0.0",
+  "description": "Golang postgres echo connectivity with Echo framework and Gorm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monkrus/postgres-echo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monkrus/postgres-echo/issues"
+  },
+  "homepage": "https://github.com/monkrus/postgres-echo#readme",
+  "dependencies": {
+    "prettier": "^2.1.2"
+  }
+}
